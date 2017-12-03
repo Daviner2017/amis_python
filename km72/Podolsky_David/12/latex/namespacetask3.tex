@@ -1,0 +1,148 @@
+\hypertarget{namespacetask3}{}\section{task3 Namespace Reference}
+\label{namespacetask3}\index{task3@{task3}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacetask3_abba7e8af5c5248ae896e372877accedc}{list\+Convertion} (\hyperlink{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}{listC}, iter=0)
+\begin{DoxyCompactList}\small\item\em This function converts all elements of list into int type. \end{DoxyCompactList}\item 
+def \hyperlink{namespacetask3_a6b40d0f4ac3da0b51afd77ef157756b4}{group\+Measure} (\hyperlink{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}{listC}, iter=0)
+\begin{DoxyCompactList}\small\item\em This function counts the same elements and returns the max of such counting. \end{DoxyCompactList}\item 
+def \hyperlink{namespacetask3_a59c205e4cf87f8cc7c2c1e6bb5d6d318}{max\+Count\+Det} (\hyperlink{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}{listC}, \hyperlink{namespacetask3_ac93936462cbd3bcd1b57b0770e3e565f}{m}, iter=0)
+\begin{DoxyCompactList}\small\item\em This function returns the numbers that mostly repeat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacetask3_ad2c2b323bd5691b0b9b284d8d7d7cbd1}{n} = 0
+\item 
+list \hyperlink{namespacetask3_a1e4a75eeab9e370f61b2d4a2335f8fc3}{compare\+List} = \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}{listC} = input(\char`\"{}Enter the row of positive integers\+: \char`\"{}).split()
+\item 
+def \hyperlink{namespacetask3_ac93936462cbd3bcd1b57b0770e3e565f}{m} = \hyperlink{namespacetask3_a6b40d0f4ac3da0b51afd77ef157756b4}{group\+Measure}(\hyperlink{namespacetask3_abba7e8af5c5248ae896e372877accedc}{list\+Convertion}(\hyperlink{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}{listC}))
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacetask3_a6b40d0f4ac3da0b51afd77ef157756b4}\label{namespacetask3_a6b40d0f4ac3da0b51afd77ef157756b4}} 
+\index{task3@{task3}!group\+Measure@{group\+Measure}}
+\index{group\+Measure@{group\+Measure}!task3@{task3}}
+\subsubsection{\texorpdfstring{group\+Measure()}{groupMeasure()}}
+{\footnotesize\ttfamily def task3.\+group\+Measure (\begin{DoxyParamCaption}\item[{}]{listC,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function counts the same elements and returns the max of such counting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listC} & list, where elements are compared to each another \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+max integer that show the biggest amount of repeated elements
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(group\+Measure(\mbox{[}1, 1, 1, 2, 2, 3\mbox{]})) 3 print(group\+Measure(\mbox{[}1, 1, \char`\"{}a\char`\"{}, 2, 2, 3\mbox{]})) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespacetask3_abba7e8af5c5248ae896e372877accedc}\label{namespacetask3_abba7e8af5c5248ae896e372877accedc}} 
+\index{task3@{task3}!list\+Convertion@{list\+Convertion}}
+\index{list\+Convertion@{list\+Convertion}!task3@{task3}}
+\subsubsection{\texorpdfstring{list\+Convertion()}{listConvertion()}}
+{\footnotesize\ttfamily def task3.\+list\+Convertion (\begin{DoxyParamCaption}\item[{}]{listC,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function converts all elements of list into int type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listC} & list to be converted \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+listC converted list
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(list\+Convertion(\mbox{[}\char`\"{}1\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}\mbox{]})) \mbox{[}1, 2, 3\mbox{]} print(list\+Convertion(\mbox{[}\char`\"{}a\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}\mbox{]})) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespacetask3_a59c205e4cf87f8cc7c2c1e6bb5d6d318}\label{namespacetask3_a59c205e4cf87f8cc7c2c1e6bb5d6d318}} 
+\index{task3@{task3}!max\+Count\+Det@{max\+Count\+Det}}
+\index{max\+Count\+Det@{max\+Count\+Det}!task3@{task3}}
+\subsubsection{\texorpdfstring{max\+Count\+Det()}{maxCountDet()}}
+{\footnotesize\ttfamily def task3.\+max\+Count\+Det (\begin{DoxyParamCaption}\item[{}]{listC,  }\item[{}]{m,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function returns the numbers that mostly repeat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listC} & list, where elements are compared to each another \\
+\hline
+{\em m} & integer, which is returned from group\+Measure(list\+C) and shows the max amount of repeated elements \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{} \textquotesingle{}.join(str(e) for e in \mbox{[}list\+C\mbox{[}iter\mbox{]}\mbox{]}$\ast$m)\+: a string with repeated integers
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(max\+Count\+Det(\mbox{[}1, 1, 1, 2, 2, 3\mbox{]}, 3)) 1 1 1 print(max\+Count\+Det(\mbox{[}1, 1, \char`\"{}a\char`\"{}, 2, 2, 3\mbox{]}, 3)) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetask3_a1e4a75eeab9e370f61b2d4a2335f8fc3}\label{namespacetask3_a1e4a75eeab9e370f61b2d4a2335f8fc3}} 
+\index{task3@{task3}!compare\+List@{compare\+List}}
+\index{compare\+List@{compare\+List}!task3@{task3}}
+\subsubsection{\texorpdfstring{compare\+List}{compareList}}
+{\footnotesize\ttfamily list task3.\+compare\+List = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}\label{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}} 
+\index{task3@{task3}!listC@{listC}}
+\index{listC@{listC}!task3@{task3}}
+\subsubsection{\texorpdfstring{listC}{listC}}
+{\footnotesize\ttfamily task3.\+listC = input(\char`\"{}Enter the row of positive integers\+: \char`\"{}).split()}
+
+\mbox{\Hypertarget{namespacetask3_ac93936462cbd3bcd1b57b0770e3e565f}\label{namespacetask3_ac93936462cbd3bcd1b57b0770e3e565f}} 
+\index{task3@{task3}!m@{m}}
+\index{m@{m}!task3@{task3}}
+\subsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily def task3.\+m = \hyperlink{namespacetask3_a6b40d0f4ac3da0b51afd77ef157756b4}{group\+Measure}(\hyperlink{namespacetask3_abba7e8af5c5248ae896e372877accedc}{list\+Convertion}(\hyperlink{namespacetask3_a3318227cad6d17b510fe2bf8cf087ddd}{listC}))}
+
+\mbox{\Hypertarget{namespacetask3_ad2c2b323bd5691b0b9b284d8d7d7cbd1}\label{namespacetask3_ad2c2b323bd5691b0b9b284d8d7d7cbd1}} 
+\index{task3@{task3}!n@{n}}
+\index{n@{n}!task3@{task3}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int task3.\+n = 0}
+

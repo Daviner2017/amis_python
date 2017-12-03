@@ -1,0 +1,200 @@
+\hypertarget{namespacetask1}{}\section{task1 Namespace Reference}
+\label{namespacetask1}\index{task1@{task1}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacetask1_a417fc33e3a3db579a8e974cbd8b80978}{list\+Convertion} (listC, iter=0)
+\begin{DoxyCompactList}\small\item\em This function converts all elements of list into int type. \end{DoxyCompactList}\item 
+def \hyperlink{namespacetask1_ab5289f16454d53dc123bcdaa993b8f34}{find\+Max\+El} (input\+List, iter=0)
+\begin{DoxyCompactList}\small\item\em This function calculates the max element. \end{DoxyCompactList}\item 
+def \hyperlink{namespacetask1_ac3ea594388e8ff9b77bd1995bf070998}{erase\+Max\+Els} (listC, max\+Element, iter=0)
+\begin{DoxyCompactList}\small\item\em This function deletes all elements equal to the max element. \end{DoxyCompactList}\item 
+def \hyperlink{namespacetask1_ad20e69875516dbe574f249cd46b31907}{find2\+Max\+El} (listC, iter=0)
+\begin{DoxyCompactList}\small\item\em This function searches for second max element in the listC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}{pos\+Int\+List} = input(\char`\"{}Enter list of positive integers\+: \char`\"{}).split()
+\item 
+def \hyperlink{namespacetask1_a6cabdd323ac8029987571a816c6f89a4}{pos\+Int\+ListC} = \hyperlink{namespacetask1_a417fc33e3a3db579a8e974cbd8b80978}{list\+Convertion}(\hyperlink{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}{pos\+Int\+List})
+\item 
+def \hyperlink{namespacetask1_a228980e4354a16d91583cc8b23e2405c}{list\+Max} = \hyperlink{namespacetask1_a6cabdd323ac8029987571a816c6f89a4}{pos\+Int\+ListC}\mbox{[}0\mbox{]}
+\item 
+def \hyperlink{namespacetask1_a1910c961e91aa15b50a9d7210903d5c4}{the\+Max\+El} = \hyperlink{namespacetask1_ab5289f16454d53dc123bcdaa993b8f34}{find\+Max\+El}(\hyperlink{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}{pos\+Int\+List})
+\item 
+list \hyperlink{namespacetask1_af2a600c0c28c511d63f0e583147ca4a3}{test} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{namespacetask1_acbed649192dd192650314ae9d72dc371}{max\+El2} = \hyperlink{namespacetask1_af2a600c0c28c511d63f0e583147ca4a3}{test}\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacetask1_ac3ea594388e8ff9b77bd1995bf070998}\label{namespacetask1_ac3ea594388e8ff9b77bd1995bf070998}} 
+\index{task1@{task1}!erase\+Max\+Els@{erase\+Max\+Els}}
+\index{erase\+Max\+Els@{erase\+Max\+Els}!task1@{task1}}
+\subsubsection{\texorpdfstring{erase\+Max\+Els()}{eraseMaxEls()}}
+{\footnotesize\ttfamily def task1.\+erase\+Max\+Els (\begin{DoxyParamCaption}\item[{}]{listC,  }\item[{}]{max\+Element,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function deletes all elements equal to the max element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listC} & list where max element is being searched \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+{\em max\+Element} & max element of the listC \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+test listC without max element(s)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(erase\+Max\+Els(\mbox{[}1, 2, 3, 4\mbox{]}, 4)) \mbox{[}1, 2, 3\mbox{]} print(erase\+Max\+Els(\mbox{[}1, \char`\"{}a\char`\"{}, 3, 4\mbox{]}, 4)) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespacetask1_ad20e69875516dbe574f249cd46b31907}\label{namespacetask1_ad20e69875516dbe574f249cd46b31907}} 
+\index{task1@{task1}!find2\+Max\+El@{find2\+Max\+El}}
+\index{find2\+Max\+El@{find2\+Max\+El}!task1@{task1}}
+\subsubsection{\texorpdfstring{find2\+Max\+El()}{find2MaxEl()}}
+{\footnotesize\ttfamily def task1.\+find2\+Max\+El (\begin{DoxyParamCaption}\item[{}]{listC,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function searches for second max element in the listC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listC} & list, where second max is searching \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+max\+El2 2nd max integer
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(find2\+Max\+El(\mbox{[}1, 2, 3\mbox{]})) \char`\"{}2\char`\"{} print(sec\+\_\+max\+\_\+f(\mbox{[}1, 2, \char`\"{}b\char`\"{}\mbox{]})) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespacetask1_ab5289f16454d53dc123bcdaa993b8f34}\label{namespacetask1_ab5289f16454d53dc123bcdaa993b8f34}} 
+\index{task1@{task1}!find\+Max\+El@{find\+Max\+El}}
+\index{find\+Max\+El@{find\+Max\+El}!task1@{task1}}
+\subsubsection{\texorpdfstring{find\+Max\+El()}{findMaxEl()}}
+{\footnotesize\ttfamily def task1.\+find\+Max\+El (\begin{DoxyParamCaption}\item[{}]{input\+List,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function calculates the max element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+List} & list where max element is being searched \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+list\+Max integer
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(find\+Max\+El(\mbox{[}1,2,3,4\mbox{]})) \char`\"{}4\char`\"{} print(find\+Max\+El(\mbox{[}1,2,\char`\"{}a\char`\"{},3\mbox{]})) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+\mbox{\Hypertarget{namespacetask1_a417fc33e3a3db579a8e974cbd8b80978}\label{namespacetask1_a417fc33e3a3db579a8e974cbd8b80978}} 
+\index{task1@{task1}!list\+Convertion@{list\+Convertion}}
+\index{list\+Convertion@{list\+Convertion}!task1@{task1}}
+\subsubsection{\texorpdfstring{list\+Convertion()}{listConvertion()}}
+{\footnotesize\ttfamily def task1.\+list\+Convertion (\begin{DoxyParamCaption}\item[{}]{listC,  }\item[{}]{iter = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+This function converts all elements of list into int type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listC} & list to be converted \\
+\hline
+{\em iter} & integer iterator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+listC converted list
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Overflow\+Error} & \\
+\hline
+{\em Value\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyParagraph}{Examples}
+print(list\+Convertion(\mbox{[}\char`\"{}1\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}\mbox{]})) \mbox{[}1, 2, 3\mbox{]} print(list\+Convertion(\mbox{[}\char`\"{}a\char`\"{}, \char`\"{}2\char`\"{}, \char`\"{}3\char`\"{}\mbox{]})) Traceback (most recent call last)\+: ... Value\+Error 
+\end{DoxyParagraph}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetask1_a228980e4354a16d91583cc8b23e2405c}\label{namespacetask1_a228980e4354a16d91583cc8b23e2405c}} 
+\index{task1@{task1}!list\+Max@{list\+Max}}
+\index{list\+Max@{list\+Max}!task1@{task1}}
+\subsubsection{\texorpdfstring{list\+Max}{listMax}}
+{\footnotesize\ttfamily def task1.\+list\+Max = \hyperlink{namespacetask1_a6cabdd323ac8029987571a816c6f89a4}{pos\+Int\+ListC}\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacetask1_acbed649192dd192650314ae9d72dc371}\label{namespacetask1_acbed649192dd192650314ae9d72dc371}} 
+\index{task1@{task1}!max\+El2@{max\+El2}}
+\index{max\+El2@{max\+El2}!task1@{task1}}
+\subsubsection{\texorpdfstring{max\+El2}{maxEl2}}
+{\footnotesize\ttfamily list task1.\+max\+El2 = \hyperlink{namespacetask1_af2a600c0c28c511d63f0e583147ca4a3}{test}\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}\label{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}} 
+\index{task1@{task1}!pos\+Int\+List@{pos\+Int\+List}}
+\index{pos\+Int\+List@{pos\+Int\+List}!task1@{task1}}
+\subsubsection{\texorpdfstring{pos\+Int\+List}{posIntList}}
+{\footnotesize\ttfamily task1.\+pos\+Int\+List = input(\char`\"{}Enter list of positive integers\+: \char`\"{}).split()}
+
+\mbox{\Hypertarget{namespacetask1_a6cabdd323ac8029987571a816c6f89a4}\label{namespacetask1_a6cabdd323ac8029987571a816c6f89a4}} 
+\index{task1@{task1}!pos\+Int\+ListC@{pos\+Int\+ListC}}
+\index{pos\+Int\+ListC@{pos\+Int\+ListC}!task1@{task1}}
+\subsubsection{\texorpdfstring{pos\+Int\+ListC}{posIntListC}}
+{\footnotesize\ttfamily def task1.\+pos\+Int\+ListC = \hyperlink{namespacetask1_a417fc33e3a3db579a8e974cbd8b80978}{list\+Convertion}(\hyperlink{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}{pos\+Int\+List})}
+
+\mbox{\Hypertarget{namespacetask1_af2a600c0c28c511d63f0e583147ca4a3}\label{namespacetask1_af2a600c0c28c511d63f0e583147ca4a3}} 
+\index{task1@{task1}!test@{test}}
+\index{test@{test}!task1@{task1}}
+\subsubsection{\texorpdfstring{test}{test}}
+{\footnotesize\ttfamily list task1.\+test = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacetask1_a1910c961e91aa15b50a9d7210903d5c4}\label{namespacetask1_a1910c961e91aa15b50a9d7210903d5c4}} 
+\index{task1@{task1}!the\+Max\+El@{the\+Max\+El}}
+\index{the\+Max\+El@{the\+Max\+El}!task1@{task1}}
+\subsubsection{\texorpdfstring{the\+Max\+El}{theMaxEl}}
+{\footnotesize\ttfamily def task1.\+the\+Max\+El = \hyperlink{namespacetask1_ab5289f16454d53dc123bcdaa993b8f34}{find\+Max\+El}(\hyperlink{namespacetask1_aeb30bab29edc92a3d32f397950d9ac2b}{pos\+Int\+List})}
+
